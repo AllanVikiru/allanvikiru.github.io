@@ -1,7 +1,7 @@
 /*!
-    * Start Bootstrap - Resume v6.0.2 (https://startbootstrap.com/theme/resume)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
+    * Start Bootstrap - Allan Vikiru | Portfolio v6.0.2 (https://allanvikiru.github.io)
+    * Copyright 2013-2021 Start Bootstrap
+    * Licensed under MIT (https://github.com/StartBootstrap/portfolio/blob/master/LICENSE)
     */
     (function ($) {
     "use strict"; // Start of use strict
