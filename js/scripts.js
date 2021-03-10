@@ -1,5 +1,5 @@
 /*!
-    * Start Bootstrap - Allan Vikiru | Portfolio v6.0.2 (https://allanvikiru.github.io)
+    * Start Bootstrap - Allan Vikiru | Portfolio v6.0.2 (http://allanvikiru.github.io)
     * Copyright 2013-2021 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/portfolio/blob/master/LICENSE)
     */
