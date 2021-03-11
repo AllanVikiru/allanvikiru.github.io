@@ -1,6 +1,6 @@
 #sideNav {
     .navbar-nav .nav-item .nav-link {
-        font-weight: 800;
+        font-weight: 900;
         letter-spacing: 0.05rem;
         text-transform: uppercase;
     }
@@ -29,8 +29,8 @@
             margin: auto auto 0;
             padding: 0.5rem;
             .img-profile {
-                max-width: 10rem;
-                max-height: 10rem;
+                max-width: 13.5rem;
+                max-height: 13.5rem;
                 border: 0.5rem solid fade-out($white, 0.8);
             }
         }
