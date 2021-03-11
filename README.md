@@ -3,7 +3,6 @@
 Based on the [Resume](https://startbootstrap.com/theme/resume/) theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/AllanVikiru/allanvikiru.github.io/master/LICENSE)
-
 [![npm version](https://img.shields.io/npm/v/startbootstrap-resume.svg)](https://www.npmjs.com/package/startbootstrap-resume)
 
 ## Setup
