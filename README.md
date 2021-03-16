@@ -1,4 +1,4 @@
-# [My Developer Portfolio](https://allanvikiru.github.io)
+# [My Portfolio](https://allanvikiru.github.io)
 
 Based on the [Resume](https://startbootstrap.com/theme/resume/) theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
 

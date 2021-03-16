@@ -3,6 +3,7 @@
 body {
     padding-top: $navbar-base-height;
     color: $gray-600;
+    font-size: 1.1rem;
 }
 @include media-breakpoint-up(lg) {
     body {
@@ -25,7 +26,7 @@ h1 {
 }
 
 p.lead {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 
@@ -35,3 +36,4 @@ p.lead {
     font-weight: 500;
     font-size: 1.5rem;
 }
+

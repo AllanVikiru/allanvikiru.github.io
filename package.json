@@ -1,5 +1,5 @@
 {
-    "title": "Allan Vikiru | Portfolio",
+    "title": "Allan Vikiru | Software Engineer",
     "name": "portfolio",
     "version": "6.0.2",
     "scripts": {
@@ -14,7 +14,7 @@
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
     },
-    "description": "Software developer portfolio by Allan Vikiru",
+    "description": "Software engineer portfolio by Allan Vikiru",
     "keywords": [
         "css",
         "sass",
