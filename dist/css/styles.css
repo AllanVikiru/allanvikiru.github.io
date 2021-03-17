@@ -10240,9 +10240,9 @@ p.lead {
   top: 0;
   left: 0;
   bottom: 0;
-  background: #807f7f;
+  z-index: 2;
   transform: rotateY(-180deg);
-  box-shadow: 5px 7px 9px -4px #807f7f;
+  box-shadow: 5px 7px 9px -6px #807f7f;
 }
 
 .frontside,
@@ -10273,9 +10273,8 @@ p.lead {
 }
 
 .frontside .card .card-body img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+  height: auto;
+  width: auto;
 }
 
 ul.card-list {
