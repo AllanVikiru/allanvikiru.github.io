@@ -160,7 +160,12 @@ html(lang='en')
             // Skills
             section#skills.resume-section
                 .resume-section-content
-                    h2.mb-5 Skills
+                    .d-flex.flex-column.flex-md-row.justify-content-between
+                        .flex-grow-1
+                            h2.mb-5 Skills
+                        .flex-shrink-0
+                            span.text-primary Icon Credits
+                            // TODO: set icon credits
                     div.container
                         div.row
                             div.col-xs-12.col-sm-6.col-md-4
@@ -348,20 +353,70 @@ html(lang='en')
                 .resume-section-content
                     h2.mb-5 Published Works
                     ul.fa-ul.mb-0
-                        //- li
-                        //-     span.fa-li
-                        //-         i.fas.fa-trophy.text-warning
-                        //-     | Google Analytics Certified Developer
-                        //- li
-                        //-     span.fa-li
-                        //-         i.fas.fa-trophy.text-warning
-                        //-     | Mobile Web Specialist - Google Certification
-
+                        li
+                            span.fa-li
+                                i.fas.fa-fire-extinguisher.text-primary
+                            a.pub-link(href="https://fireband-web.herokuapp.com") FireBand (2020)
+                        li
+                            span.fa-li
+                                i.fas.fa-tv.text-primary
+                            a.pub-link(href="https://regularshowscreens.wordpress.com") Regular Show Screens Bot (2020)
+                        li
+                            span.fa-li
+                                i.fas.fa-recycle.text-primary
+                            a.pub-link Waste Management using Augmented Reality (2019)
+                        li
+                            span.fa-li
+                                i.fas.fa-house-user.text-primary
+                            a.pub-link Automated Estate Services Management System  (2019)
+                        li
+                            span.fa-li
+                                i.fas.fa-house-user.text-primary
+                            a.pub-link(href="https://github.com/AllanVikiru/Faida-Estate-Management-System") Faida Estate Management System (2018)
 
             // Contact
             section#contact.resume-section
                 .resume-section-content
-                    h2.mb-5 Contact
+                    h2.mb-2 Contact
+                    p.lead.mb-3 Let's collaborate!&ensp;Reach out to me by sending an email through the form below, or through the social platforms indicated.
+                    .col-xl-10.col-xs-12.col-sm-6.mb-2
+                        //- form.js-validation-material(action="", method="post")
+                        //-     .form-group
+                        //-         label#contact-name.mdc-text-field.mdc-text-field--outlined
+                        //-             span.mdc-notched-outline
+                        //-                 span.mdc-notched-outline__leading
+                        //-                 span.mdc-notched-outline__notch
+                        //-                     span.mdc-floating-label#name-label Your Name
+                        //-                 span.mdc-notched-outline__trailing
+                        //-             input.mdc-text-field__input(type="text", aria-labelledby="name-label")
+                        //-     .form-group
+                        //-         label#contact-email.mdc-text-field.mdc-text-field--outlined
+                        //-             span.mdc-notched-outline
+                        //-                 span.mdc-notched-outline__leading
+                        //-                 span.mdc-notched-outline__notch
+                        //-                     span.mdc-floating-label#email-label Your Email Address
+                        //-                 span.mdc-notched-outline__trailing
+                        //-             input.mdc-text-field__input(type="text", aria-labelledby="email-label")
+                        //-     .form-group
+                        //-         label#contact-subj.mdc-text-field.mdc-text-field--outlined
+                        //-             span.mdc-notched-outline
+                        //-                 span.mdc-notched-outline__leading
+                        //-                 span.mdc-notched-outline__notch
+                        //-                     span.mdc-floating-label#subject-label Subject
+                        //-                 span.mdc-notched-outline__trailing
+                        //-             input.mdc-text-field__input(type="text", aria-labelledby="subject-label")
+                        //-     .form-group
+                        //-         label#contact-msg.mdc-text-field.mdc-text-field--outlined.mdc-text-field--textarea.mdc-text-field--with-internal-counter
+                        //-             span.mdc-notched-outline
+                        //-                 span.mdc-notched-outline__leading
+                        //-                 span.mdc-notched-outline__notch
+                        //-                     span.mdc-floating-label#msg-label Your Message
+                        //-                 span.mdc-notched-outline__trailing
+                        //-             span.mdc-text-field__resizer
+                        //-                 textarea.mdc-text-field__input(aria-labelledby="msg-label",rows="6",cols="40",maxlength="140")
+                        //-                 span.mdc-text-field-character-counter 0 / 140
+                            .form-group
+                               // TODO: contact me form
                     .social-icons
                         a.social-icon(href='https://www.linkedin.com/in/allan-vikiru/')
                             i.fab.fa-linkedin-in
@@ -384,5 +439,16 @@ html(lang='en')
         // Third party plugin JS
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
 
+        //Material Design Form JS
+        //script(src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js")
+
         // Core theme JS
         script(src='js/scripts.js')
+
+        //Link Previews JS
+        script(src="js/previews.js")
+
+        //Forms JS
+        script(src="js/forms.js")
+
+
