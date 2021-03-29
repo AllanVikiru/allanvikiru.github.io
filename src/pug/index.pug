@@ -77,7 +77,7 @@ html(lang='en')
                     p.lead.mb-5
                         | I am an experienced software engineer, who aims to solve problems by conducting informative research and applying effective solutions in Information Technology.
                         br
-                        | With the skills and knowledge gained, I continually seek to discover and implement techniques that enhance human-computer interaction.
+                        | With the skills and knowledge gained, I continually seek to discover and implement techniques that enhance ethical human-computer interaction.
                     .subheading.mb-3 Professional Traits
                     ul.fa-ul.mb-0
                         li.mb-1
@@ -164,8 +164,10 @@ html(lang='en')
                         .flex-grow-1
                             h2.mb-5 Skills
                         .flex-shrink-0
-                            span.text-primary Icon Credits
-                            // TODO: set icon credits
+                            span#credits.text-primary
+                                | Attributions
+                            #snackbar
+                                a#credit-link(href="https://icons8.com") Icons by Icons8
                     div.container
                         div.row
                             div.col-xs-12.col-sm-6.col-md-4
@@ -351,7 +353,7 @@ html(lang='en')
             // Works
             section#works.resume-section
                 .resume-section-content
-                    h2.mb-5 Published Works
+                    h2.mb-5 Works
                     ul.fa-ul.mb-0
                         li
                             span.fa-li
@@ -360,7 +362,7 @@ html(lang='en')
                         li
                             span.fa-li
                                 i.fas.fa-tv.text-primary
-                            a.pub-link(href="https://regularshowscreens.wordpress.com") Regular Show Screens Bot (2020)
+                            a.pub-link(href="https://regularshowscreens.wordpress.com/about") Regular Show Screens Bot (2020)
                         li
                             span.fa-li
                                 i.fas.fa-recycle.text-primary
@@ -373,6 +375,7 @@ html(lang='en')
                             span.fa-li
                                 i.fas.fa-house-user.text-primary
                             a.pub-link(href="https://github.com/AllanVikiru/Faida-Estate-Management-System") Faida Estate Management System (2018)
+            hr.m-0
 
             // Contact
             section#contact.resume-section
@@ -422,9 +425,6 @@ html(lang='en')
                             i.fab.fa-linkedin-in
                         a.social-icon(href='https://github.com/AllanVikiru')
                             i.fab.fa-github
-
-                            //<a href="https://icons8.com/icon/67373/html">HTML icon by Icons8</a>
-
         svg(xmlns="http://www.w3.org/2000/svg", version="1.1")
             defs
                 filter#goo
@@ -438,9 +438,6 @@ html(lang='en')
 
         // Third party plugin JS
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
-
-        //Material Design Form JS
-        //script(src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js")
 
         // Core theme JS
         script(src='js/scripts.js')
