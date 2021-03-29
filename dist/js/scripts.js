@@ -1,9 +1,9 @@
 /*!
- * Start Bootstrap - Allan Vikiru | Software Engineer v6.0.2 (http://allanvikiru.github.io)
- * Copyright 2013-2021 Start Bootstrap
- * Licensed under MIT (https://github.com/StartBootstrap/portfolio/blob/master/LICENSE)
- */
-(function ($) {
+    * Start Bootstrap - Allan Vikiru | Software Engineer v6.0.2 (http://allanvikiru.github.io)
+    * Copyright 2013-2021 Start Bootstrap
+    * Licensed under MIT (https://github.com/StartBootstrap/portfolio/blob/master/LICENSE)
+    */
+    (function ($) {
     "use strict"; // Start of use strict
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
