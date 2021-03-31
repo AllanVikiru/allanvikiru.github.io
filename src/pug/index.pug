@@ -12,12 +12,16 @@ html(lang='en')
 
         link(rel='icon', type='image/x-icon', href='assets/img/icon.png')
 
-        // Font Awesome icons (free version)
+        // Font Awesome icons (free version) + Bootstrap CDN
         script(src='https://use.fontawesome.com/releases/v5.15.1/js/all.js', crossorigin='anonymous')
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
 
         // Google fonts
         link(href='https://fonts.googleapis.com/css?family=Bebas+Neue:wght@500,700', rel='stylesheet', type='text/css')
         link(href='https://fonts.googleapis.com/css?family=Barlow:400,400i,800,800i', rel='stylesheet', type='text/css')
+
+        //Pageclip Plugin CSS
+        link(rel="stylesheet",href="https://s.pageclip.co/v1/pageclip.css" media="screen")
 
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
@@ -165,7 +169,7 @@ html(lang='en')
                             h2.mb-5 Skills
                         .flex-shrink-0
                             span#credits.text-primary
-                                | Attributions
+                                | Icon Attributions
                             #snackbar
                                 a#credit-link(href="https://icons8.com") Icons by Icons8
                     div.container
@@ -381,56 +385,43 @@ html(lang='en')
             section#contact.resume-section
                 .resume-section-content
                     h2.mb-2 Contact
-                    p.lead.mb-3 Let's collaborate!&ensp;Reach out to me by sending an email through the form below, or through the social platforms indicated.
-                    .col-xl-10.col-xs-12.col-sm-6.mb-2
-                        //- form.js-validation-material(action="", method="post")
-                        //-     .form-group
-                        //-         label#contact-name.mdc-text-field.mdc-text-field--outlined
-                        //-             span.mdc-notched-outline
-                        //-                 span.mdc-notched-outline__leading
-                        //-                 span.mdc-notched-outline__notch
-                        //-                     span.mdc-floating-label#name-label Your Name
-                        //-                 span.mdc-notched-outline__trailing
-                        //-             input.mdc-text-field__input(type="text", aria-labelledby="name-label")
-                        //-     .form-group
-                        //-         label#contact-email.mdc-text-field.mdc-text-field--outlined
-                        //-             span.mdc-notched-outline
-                        //-                 span.mdc-notched-outline__leading
-                        //-                 span.mdc-notched-outline__notch
-                        //-                     span.mdc-floating-label#email-label Your Email Address
-                        //-                 span.mdc-notched-outline__trailing
-                        //-             input.mdc-text-field__input(type="text", aria-labelledby="email-label")
-                        //-     .form-group
-                        //-         label#contact-subj.mdc-text-field.mdc-text-field--outlined
-                        //-             span.mdc-notched-outline
-                        //-                 span.mdc-notched-outline__leading
-                        //-                 span.mdc-notched-outline__notch
-                        //-                     span.mdc-floating-label#subject-label Subject
-                        //-                 span.mdc-notched-outline__trailing
-                        //-             input.mdc-text-field__input(type="text", aria-labelledby="subject-label")
-                        //-     .form-group
-                        //-         label#contact-msg.mdc-text-field.mdc-text-field--outlined.mdc-text-field--textarea.mdc-text-field--with-internal-counter
-                        //-             span.mdc-notched-outline
-                        //-                 span.mdc-notched-outline__leading
-                        //-                 span.mdc-notched-outline__notch
-                        //-                     span.mdc-floating-label#msg-label Your Message
-                        //-                 span.mdc-notched-outline__trailing
-                        //-             span.mdc-text-field__resizer
-                        //-                 textarea.mdc-text-field__input(aria-labelledby="msg-label",rows="6",cols="40",maxlength="140")
-                        //-                 span.mdc-text-field-character-counter 0 / 140
-                            .form-group
-                               // TODO: contact me form
+                    p.lead Let's collaborate!&nbsp;Reach out to me by sending an email through the form below, or through the social platforms indicated.
+                    .mb-3
+                    .col-xl-10.col-xs-12.col-sm-6
+                        form.contact-form.validate-form.pageclip-form(action="https://send.pageclip.co/WpWgExbutHzVqfW7NtvjtBJfFW8ZflpI/contact-me", method="post")
+                            .wrap-input.validate-input(data-validate="Please enter your name")
+                                input.input(type="text",name="name")
+                                span.focus-input(data-placeholder="Name (required)")
+                            .wrap-input.validate-input(data-validate = "Please enter a valid email address in the format: name@example.com")
+                                input.input(type="text" name="email")
+                                span.focus-input(data-placeholder="Email Address (required)")
+                            .wrap-input.validate-input(data-validate = "Please enter your message")
+                                textarea.input(name="message")
+                                span.focus-input(data-placeholder="Message (required)")
+                            .container-contact-form-btn
+                                .wrap-contact-form-btn
+                                    .contact-form-bgbtn
+                                    button.contact-form-btn.pageclip-form__submit
+                                        span.msg Send Message
+                    .mb-4
                     .social-icons
                         a.social-icon(href='https://www.linkedin.com/in/allan-vikiru/')
                             i.fab.fa-linkedin-in
                         a.social-icon(href='https://github.com/AllanVikiru')
                             i.fab.fa-github
+                        a.social-icon(href='https://en.gravatar.com/allanvikiru')
+                            i.fab.fa-wordpress
+
         svg(xmlns="http://www.w3.org/2000/svg", version="1.1")
             defs
                 filter#goo
                     feGaussianBlur(in="SourceGraphic" result="blur" stdDeviation="10")
                     feColourMatrix(in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo")
                     feBlend(in2="goo" in="SourceGraphic" result="mix")
+
+
+        //Pageclip Plugin JS
+        script(src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8")
 
         // Bootstrap core JS
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
@@ -447,5 +438,6 @@ html(lang='en')
 
         //Forms JS
         script(src="js/forms.js")
+
 
 
