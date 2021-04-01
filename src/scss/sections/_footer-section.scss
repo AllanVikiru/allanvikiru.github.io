@@ -1,0 +1,29 @@
+footer#footer-section {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .footer-section-content {
+        width: 100%;
+        align-content: center;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+@include media-breakpoint-up(md) {
+    footer#footer-section {
+        min-height: 0.1vh;
+    }
+}
+@include media-breakpoint-up(lg) {
+    footer#footer-section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+

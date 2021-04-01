@@ -15,8 +15,8 @@ module.exports = function renderScripts() {
     const formsDestPath = path.resolve(path.dirname(__filename), '../dist/js/forms.js');
 
     const copyright = `/*!
-    * Start Bootstrap - ${packageJSON.title} v${packageJSON.version} (${packageJSON.homepage})
-    * Copyright 2013-${new Date().getFullYear()} ${packageJSON.author}
+    * ${packageJSON.title} based on Start Bootstrap v${packageJSON.version} (${packageJSON.homepage})
+    * Copyright 2013-${new Date().getFullYear()} ${packageJSON.author} & ${packageJSON.contributors}
     * Licensed under ${packageJSON.license} (https://github.com/StartBootstrap/${packageJSON.name}/blob/master/LICENSE)
     */
     `

@@ -34,14 +34,7 @@
         target: "#sideNav",
     });
 
-    //display credits snackbar
-    var credits = document.getElementById("credits");
-    credits.onclick = function () {
-        var x = document.getElementById("snackbar");
-        x.className = "show";
-        setTimeout(function () {
-            x.className = x.className.replace("show", "");
-        }, 5000);
-    };
+    //Copyright
+    document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
 
 })(jQuery); // End of use strict

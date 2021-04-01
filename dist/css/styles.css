@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
-* Start Bootstrap - Allan Vikiru | Software Engineer v6.0.2 (http://allanvikiru.github.io)
-* Copyright 2013-2021 Start Bootstrap
+* Allan Vikiru | Software Engineer based on Start Bootstrap v6.0.2 (http://allanvikiru.github.io)
+* Copyright 2013-2021 Start Bootstrap & Allan Vikiru (https://allanvikiru.github.io/)
 * Licensed under MIT (https://github.com/StartBootstrap/portfolio/blob/master/LICENSE)
 */
 /*!
@@ -10645,71 +10645,6 @@ a:hover .mini-preview-wrapper {
   transform-origin: 0 0;
 }
 
-#snackbar {
-  visibility: hidden;
-  min-width: 250px;
-  margin-left: -125px;
-  background-color: #343a40;
-  text-align: center;
-  border-radius: 2px;
-  padding: 16px;
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  bottom: 30px;
-  font-size: 18px;
-}
-
-#snackbar.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 4.5s;
-  animation: fadein 0.5s, fadeout 0.5s 4.5s;
-}
-
-@-webkit-keyframes fadein {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 30px;
-    opacity: 1;
-  }
-}
-@keyframes fadein {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 30px;
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
-}
-@keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
-}
-#credit-link, #credit-link:hover {
-  color: white;
-}
-
 section.resume-section {
   display: flex;
   align-items: center;
@@ -10734,5 +10669,33 @@ section.resume-section .resume-section-content {
     padding-right: 3rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+}
+footer#footer-section {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+footer#footer-section .footer-section-content {
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  footer#footer-section {
+    min-height: 0.1vh;
+  }
+}
+@media (min-width: 992px) {
+  footer#footer-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
