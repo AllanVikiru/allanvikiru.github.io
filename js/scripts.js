@@ -1,6 +1,6 @@
 /*!
-    * Start Bootstrap - Allan Vikiru | Software Engineer v6.0.2 (http://allanvikiru.github.io)
-    * Copyright 2013-2021 Start Bootstrap
+    * Allan Vikiru | Software Engineer based on Start Bootstrap v6.0.2 (http://allanvikiru.github.io)
+    * Copyright 2013-2021 Start Bootstrap & Allan Vikiru (https://allanvikiru.github.io/)
     * Licensed under MIT (https://github.com/StartBootstrap/portfolio/blob/master/LICENSE)
     */
     (function ($) {
@@ -39,14 +39,7 @@
         target: "#sideNav",
     });
 
-    //display credits snackbar
-    var credits = document.getElementById("credits");
-    credits.onclick = function () {
-        var x = document.getElementById("snackbar");
-        x.className = "show";
-        setTimeout(function () {
-            x.className = x.className.replace("show", "");
-        }, 5000);
-    };
+    //Copyright
+    document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
 
 })(jQuery); // End of use strict
