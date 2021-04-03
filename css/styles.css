@@ -10645,6 +10645,10 @@ a:hover .mini-preview-wrapper {
   transform-origin: 0 0;
 }
 
+a.bmc-btn:hover {
+  color: #FFDD00;
+}
+
 section.resume-section {
   display: flex;
   align-items: center;

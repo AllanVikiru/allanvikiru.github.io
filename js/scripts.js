@@ -40,6 +40,7 @@
     });
 
     //Copyright
-    document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))
-
+    document
+        .getElementById("copyright")
+        .appendChild(document.createTextNode(new Date().getFullYear()));
 })(jQuery); // End of use strict
