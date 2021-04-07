@@ -55,3 +55,7 @@ To preview the changes you make to the code, you can open the `index.html` file 
 - `npm start` or `npm run start` runs the project, launches a live preview in your default browser, and watches for changes made to files in *src*
 
 - The GitHub Action `deploy.yml` in `.github/workflows` is used to set the generated files in the `dist` folder to the [gh-pages](https://github.com/AllanVikiru/allanvikiru.github.io/tree/gh-pages) branch. Be sure to set the branch the site is built on in your repo settings.
+
+
+#### Feel free to send your queries and contributions. Cheers!
+
