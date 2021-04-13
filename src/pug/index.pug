@@ -2,6 +2,9 @@ doctype html
 html(lang='en')
 
     head
+        //Google Tag Manager
+        script
+            include ../js/tags.js
 
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
@@ -16,7 +19,7 @@ html(lang='en')
         script(src='https://use.fontawesome.com/releases/v5.15.1/js/all.js', crossorigin='anonymous')
         link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
 
-        // Google fonts
+        // Google Fonts
         link(href='https://fonts.googleapis.com/css?family=Bebas+Neue:wght@500,700', rel='stylesheet', type='text/css')
         link(href='https://fonts.googleapis.com/css?family=Barlow:400,400i,800,800i', rel='stylesheet', type='text/css')
 
@@ -26,10 +29,11 @@ html(lang='en')
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
 
-        //Google Analytics
-        script(async src="https://www.googletagmanager.com/gtag/js?id=G-VVSLWK2PEC")
-
     body#page-top
+        //Google Tag Manager (noscript)
+        noscript
+            iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-WX3DMVN", height="0", width="0" style="display:none;visibility:hidden")
+        //End Google Tag Manager (noscript)
 
         // Navigation
         nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top

@@ -14,6 +14,9 @@ module.exports = function renderScripts() {
     const formsSrcPath = path.resolve(path.dirname(__filename), '../src/js/forms.js');
     const formsDestPath = path.resolve(path.dirname(__filename), '../dist/js/forms.js');
 
+    const tagsSrcPath = path.resolve(path.dirname(__filename), '../src/js/tags.js');
+    const tagsDestPath = path.resolve(path.dirname(__filename), '../dist/js/tags.js');
+
     const copyright = `/*!
     * ${packageJSON.title} based on Start Bootstrap v${packageJSON.version} (${packageJSON.homepage})
     * Copyright 2013-${new Date().getFullYear()} ${packageJSON.author} & ${packageJSON.contributors}
@@ -30,5 +33,5 @@ module.exports = function renderScripts() {
     fs.writeFileSync(scriptsDestPath, copyright + scriptsJS);
     sh.cp('-R', previewsSrcPath, previewsDestPath);
     sh.cp('-R', formsSrcPath, formsDestPath);
-
+    sh.cp('-R', tagsSrcPath, tagsDestPath);
 };
