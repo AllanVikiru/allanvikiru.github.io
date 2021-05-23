@@ -410,13 +410,27 @@ html(lang='en')
                         script(type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="allanvikiru" data-color="#343a40" data-emoji="" data-font="Cookie" data-text="Buy me a Coffee" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00")
             hr.m-0
 
+            section#snackbar
+                #snackbar-section-content.active
+                    .text
+                        | This site uses cookies and third-party tools for analytics and tracking.
+                        a.ripple.rect(href="../assets/docs/Privacy Policy.pdf" target="_blank") Learn More
+                    #close-sb.ripple
+                        .text
+                            i.fas.fa-times
+
             footer#footer-section
                 .footer-section-content
                     | Skills Icons by
                     a(href="https://icons8.com") Icons8
-                    |. &copy;
+                    |&ensp;|&ensp;
+                    | Read the
+                    a(href="../assets/docs/Privacy Policy.pdf") Privacy Policy
+                    br
+                    |&copy;
                     span#copyright
                     a(href="#") Allan Vikiru
+
 
             // Blobs SVG
             svg#blobs(xmlns="http://www.w3.org/2000/svg", version="1.1", width="0", height="0")

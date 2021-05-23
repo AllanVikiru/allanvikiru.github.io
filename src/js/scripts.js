@@ -1,5 +1,12 @@
 (function ($) {
     "use strict"; // Start of use strict
+
+    //dismiss snackbar on button click
+    var cb = document.getElementById("close-sb");
+    cb.onclick = function () {
+        $('#snackbar-section-content').toggleClass('active')
+    };
+
     // Smooth scrolling using jQuery easing
     $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (
