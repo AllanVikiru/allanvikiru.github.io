@@ -26,6 +26,9 @@ html(lang='en')
         //Pageclip Plugin CSS
         link(rel="stylesheet",href="https://s.pageclip.co/v1/pageclip.css" media="screen")
 
+        //Calendly Plugin CSS
+        link(href='https://assets.calendly.com/assets/external/widget.css', rel="stylesheet")
+
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
 
@@ -405,12 +408,18 @@ html(lang='en')
                             .wrap-input.validate-input(data-validate = "Please enter your message")
                                 textarea.input(name="message")
                                 span.focus-input(data-placeholder="Message (required)")
-                            .container-contact-form-btn
-                                .wrap-contact-form-btn
+                            .btn-container
+                                .btn-wrap
                                     .contact-form-bgbtn
                                     button.contact-form-btn.pageclip-form__submit
                                         span.msg Send Message
-                    .mb-3
+                    .mt-3
+                        .text-center
+                            .btn-container
+                                .btn-wrap
+                                    button.calendly(onclick="Calendly.initPopupWidget({url: 'https://calendly.com/allanvikiru?primary_color=246466'});return false;")
+                                        img.calendly-icon(src="../assets/img/calendly.png", alt="Calendly")
+                                        | Schedule a Meeting with Me
                     .social-icons
                         a.social-icon(href='https://www.linkedin.com/in/allan-vikiru/')
                             i.fab.fa-linkedin-in
@@ -422,7 +431,6 @@ html(lang='en')
                             i.fab.fa-github
                         a.social-icon(href='https://gitlab.com/AllanVikiru')
                             i.fab.fa-gitlab
-                    .mb-3
                     .text-center
                         script(type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="allanvikiru" data-color="#343a40" data-emoji="" data-font="Cookie" data-text="Buy me a Coffee" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00")
             hr.m-0
@@ -459,6 +467,9 @@ html(lang='en')
 
         //Pageclip Plugin JS
         script(src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8")
+
+        //Calendly Plugin JS
+        script(src='https://assets.calendly.com/assets/external/widget.js', type="text/javascript", async)
 
         // Bootstrap core JS
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')

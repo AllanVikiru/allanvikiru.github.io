@@ -177,7 +177,7 @@ textarea.input + .focus-input::after {
 
 /*------------------------------------------------------------------
 [ Button ]*/
-.container-contact-form-btn {
+.btn-container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -188,7 +188,7 @@ textarea.input + .focus-input::after {
     padding-top: 0.8125rem;
 }
 
-.wrap-contact-form-btn {
+.btn-wrap{
     display: block;
     position: relative;
     z-index: 0;
