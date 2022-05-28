@@ -35,7 +35,7 @@
 }
 
 .frontside {
-    position: relative;
+    position: absolute;
     transform: rotateY(0deg);
     transform: rotateY(0deg);
     z-index: 2;
@@ -45,7 +45,7 @@
 }
 
 .backside {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     bottom: 0;
