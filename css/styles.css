@@ -10013,7 +10013,7 @@ p.lead {
   font-family: "Bebas Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -10258,7 +10258,7 @@ a.bmc-btn:hover {
 }
 
 .frontside {
-  position: relative;
+  position: absolute;
   transform: rotateY(0deg);
   transform: rotateY(0deg);
   z-index: 2;
@@ -10266,7 +10266,7 @@ a.bmc-btn:hover {
 }
 
 .backside {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   bottom: 0;
