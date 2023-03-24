@@ -26,9 +26,6 @@ html(lang='en')
         //Pageclip Plugin CSS
         link(rel="stylesheet",href="https://s.pageclip.co/v1/pageclip.css" media="screen")
 
-        //Calendly Plugin CSS
-        link(href='https://assets.calendly.com/assets/external/widget.css', rel="stylesheet")
-
         // Core theme CSS (includes Bootstrap)
         link(href='css/styles.css', rel='stylesheet')
 
@@ -79,15 +76,15 @@ html(lang='en')
                         |Nairobi, Kenya
                         span.col-sm-6.col-md-4
                         span.buttons
-                            button.blob-btn(onClick="location.href='../assets/docs/CV.pdf';")
+                            button.cv-btn(onClick="location.href='../assets/docs/CV.pdf';")
                                 | View CV
-                                span.blob-btn__inner
-                                    span.blob-btn__blobs
-                                        span.blob-btn__blob
-                                        span.blob-btn__blob
-                                        span.blob-btn__blob
-                                        span.blob-btn__blob
-                                        span.blob-btn__blob
+                                span.cv-btn__inner
+                                    span.cv-btn__blobs
+                                        span.cv-btn__blob
+                                        span.cv-btn__blob
+                                        span.cv-btn__blob
+                                        span.cv-btn__blob
+                                        span.cv-btn__blob
                     p.lead.mb-6
                         | Hey! My name is Allan, a software engineer who aims to solve problems by conducting informative research and applying effective solutions in Computer Science.
                         br
@@ -187,27 +184,33 @@ html(lang='en')
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-shopping-cart.text-primary
-                            a.pub-link(href="https://allanvikiru.github.io/MarketBasketAnalysis/") Market Basket Analysis using Apriori Algorithm (2022, pub. 2023)[Web Article]
+                            a.pub-link(href="https://allanvikiru.github.io/MarketBasketAnalysis/") Market Basket Analysis using Apriori Algorithm (2022, pub. 2023)
+                            | [Web Article]
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-database.text-primary
-                            a.pub-link(href="https://doi.org/10.48550/arXiv.2301.10673") An Overview on Cloud Distributed Databases for Business Environments (2022, pub.2023)  [Preprint]
+                            a.pub-link(href="https://doi.org/10.48550/arXiv.2301.10673") An Overview on Cloud Distributed Databases for Business Environments (2022, pub.2023)
+                            | [Preprint]
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-house-user.text-primary
-                            a.pub-link(href="https://kairosgrouphomes.com") Kairos Group Homes (2021)  [Business Site]
+                            a.pub-link(href="https://kairosgrouphomes.com") Kairos Group Homes (2021)
+                            | [Business Site]
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-fire-extinguisher.text-primary
-                            a.pub-link(href="https://github.com/AllanVikiru/FireBand") FireBand (2020)  [IoT + Web App]
+                            a.pub-link(href="https://github.com/AllanVikiru/FireBand") FireBand (2020 - 2021)
+                            | [IoT + Web App]
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-recycle.text-primary
-                            a.pub-link(href="http://dx.doi.org/10.13140/RG.2.2.14780.16009") Waste Management using Augmented Reality (2019)  [Proposal]
+                            a.pub-link(href="http://dx.doi.org/10.13140/RG.2.2.14780.16009") Waste Management using Augmented Reality (2019)
+                            | [Proposal]
                         li.mb-1
                             span.fa-li
                                 i.fas.fa-laptop-house.text-primary
-                            a.pub-link(href="https://www.researchgate.net/publication/350591375_Automated_Estate_Services_Management_System") Automated Estate Services Management System  (2019) [Conference Paper]
+                            a.pub-link(href="https://www.researchgate.net/publication/350591375_Automated_Estate_Services_Management_System") Automated Estate Services Management System  (2019)
+                            | [Conference Paper]
             hr.m-0
 
             // Experience
@@ -330,9 +333,16 @@ html(lang='en')
                         .text-center
                             .btn-container
                                 .btn-wrap
-                                    button.calendly(onclick="Calendly.initPopupWidget({url: 'https://calendly.com/allanvikiru?primary_color=246466'});return false;")
-                                        img.calendly-icon(src="../assets/img/calendly.png", alt="Calendly")
-                                        | Schedule a Meeting with Me
+                                    span.buttons
+                                    button.zcal-btn(onClick="location.href='https://zcal.co/avikiru';")
+                                        i.fas.fa-calendar-check
+                                        |&nbsp; Schedule a Meeting with Me
+                                        span.zcal-btn__inner
+                                            span.zcal-blob-btn__blobs
+                                                span.zcal-btn__blob
+                                                span.zcal-btn__blob
+                                                span.zcal-btn__blob
+                                                span.zcal-btn__blob
                     .social-icons
                         a.social-icon(href='https://www.linkedin.com/in/allan-vikiru/')
                             i.fab.fa-linkedin-in
@@ -359,16 +369,12 @@ html(lang='en')
 
             footer#footer-section
                 .footer-section-content
-                    | Calendly Icon by
-                    a(href="https://icons8.com") Icons8
+                    | &copy;
+                    span#copyright
+                    a(href="#") Allan Vikiru
                     |&ensp;|&ensp;
                     | Read the
                     a(href="../assets/docs/Privacy-Policy.pdf") Privacy Policy
-                    br
-                    |&copy;
-                    span#copyright
-                    a(href="#") Allan Vikiru
-
 
             // Blobs SVG
             svg#blobs(xmlns="http://www.w3.org/2000/svg", version="1.1", width="0", height="0")
@@ -380,9 +386,6 @@ html(lang='en')
 
         //Pageclip Plugin JS
         script(src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8")
-
-        //Calendly Plugin JS
-        script(src='https://assets.calendly.com/assets/external/widget.js', type="text/javascript", async)
 
         // Bootstrap core JS
         script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
