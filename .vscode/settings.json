@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.pdf": "pdf",
+        "iostream": "cpp"
+    }
+}
